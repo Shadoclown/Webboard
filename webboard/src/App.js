@@ -1,15 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Card from './card';
+import All_content from './component/all_content';
 
 function App() {
   const card_data = [
-    { title: 'Science', content: 'This is some content about science.' },
-    { title: 'Technology', content: 'This is some content about technology.' },
-    { title: 'Math', content: 'This is some content about math.' },
-    { title: 'Engineering', content: 'This is some content about engineering.' },
-  ];
+    { title: 'Science', content: 'Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.Exploring the wonders of the universe.', room: 'Science' },
+    { title: 'Technology', content: 'Innovations that change the world.', room: 'Technology' },
+    { title: 'Math', content: 'Solving problems with numbers and logic.', room: 'Math' },
+    { title: 'Engineering', content: 'Building the future with design and structure.', room: 'Engineering' },
+    { title: 'Science', content: 'Understanding the laws of nature.', room: 'Science' },
+    { title: 'Technology', content: 'Artificial intelligence and robotics.', room: 'Technology' },
+    { title: 'Math', content: 'Geometry and algebra intersect.', room: 'Math' },
+    { title: 'Engineering', content: 'Renewable energy solutions.', room: 'Engineering' },
+    { title: 'Social', content: 'The impact of social media on youth culture.', room: 'Social' },
+    { title: 'Social', content: 'Understanding social structures and communities.', room: 'Social' },
+    { title: 'Science', content: 'New frontiers in space exploration.', room: 'Science' },
+    { title: 'Technology', content: 'The future of quantum computing.', room: 'Technology' },
+    { title: 'Social', content: 'The role of social movements in modern politics.', room: 'Social' },
+    { title: 'Engineering', content: 'Smart cities and urban planning.', room: 'Engineering' },
+    { title: 'Math', content: 'Calculus and its applications in real life.', room: 'Math' },
+];
+
 
   return (
     <div>
@@ -26,24 +37,7 @@ function App() {
         </div>
       </nav>
 
-      <div className="wel">
-        <h1>Welcome to the website</h1>
-      </div>
-
-      <div className="menu_bar">
-        <button className="all_room" id="room_btn">All</button>
-        <button className="first_room" id="room_btn">Room 1</button>
-        <button className="second_room" id="room_btn">Room 2</button>
-        <button className="third_room" id="room_btn">Room 3</button>
-        <button className="forth_room" id="room_btn">Room 4</button>
-        <button className="fifth_room" id="room_btn">Room 5</button>
-      </div>
-
-      <div className="main_content">
-        {card_data.map((data, index) => (
-          <Card key={index} title={data.title} content={data.content} />
-        ))}
-      </div>
+      <All_content card_data={card_data} />
     </div>
   );
 }
