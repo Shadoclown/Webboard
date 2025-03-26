@@ -1,18 +1,24 @@
+:root {
+  --primary-color: #f5f5f5;
+  --hover-color: #e3e3e3;
+  --shadow: #c7c7c7 0px 5px 10px;
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #f5f5f5;
+  background-color: var(--primary-color);
 }
 
 /* navbar */
 .navbar {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  box-shadow: #c7c7c7 0px 0px 10px;
+  box-shadow: var(--shadow);
 }
 .navbar a {
   text-decoration: none;
@@ -35,6 +41,14 @@ body {
   border: none;
 }
 
+/* welcome */
+.wel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
 /* button */
 .button {
   display: flex;
@@ -54,6 +68,77 @@ body {
   color: white;
 }
 .button .login_btn {
-  background-color: #f5f5f5;
+  background-color: var(--primary-color);
   color: rgb(0, 0, 0);
+}
+.button .login_btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* menu_bar */
+.menu_bar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+  margin-inline: 60px;
+  border-radius: 10px;
+}
+.menu_bar #room_btn {
+  width: calc(100% / 6);
+  border: none;
+  padding: 12px 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.menu_bar #room_btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* card */
+.main_content {
+  margin: 30px 10px;
+  border-radius: 10px;
+}
+.main_content #card{
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow);
+  height: 25vh;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.main_content #card:hover {
+  background-color: var(--hover-color);
+}
+.main_content #card .content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  height: 100%;
+  margin: 5px 15px;
+}
+.content h1 {
+  font-size: 20px;
+  font-weight: 1000;
+}
+.content p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #676767;
+}
+.view_more_btn {
+  background-color: rgb(229, 0, 0);
+  color: white;
+  width: 10%;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.view_more_btn:hover {
+  background-color: rgb(187, 0, 0);
 }
