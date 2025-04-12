@@ -1,9 +1,0 @@
-password ba_webboard
-
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'https://rpaualocqtiicywwsrxt.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
-
-api key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwYXVhbG9jcXRpaWN5d3dzcnh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ0MzU4NDgsImV4cCI6MjA2MDAxMTg0OH0.hvEBNyJOhn5GrsF1thaiwYr7CJ-rXMYSRBhLpASzI5U

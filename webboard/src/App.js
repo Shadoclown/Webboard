@@ -9,13 +9,24 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const { data, error } = await supabase
-        .from('cards') // Replace 'cards' with your Supabase table name
-        .select('*');
+        .from('information')
+        .select(`
+          content,
+          title,
+          category,
+          categories (title)
+        `);
 
       if (error) {
         console.error('Error fetching data:', error);
       } else {
-        setCardData(data);
+        const formattedData = data.map(item => ({
+          id: item.info_id,
+          title: item.title,
+          content: item.content,
+          room: item.categories.title, // Use the joined category title
+        }));
+        setCardData(formattedData);
       }
     };
 

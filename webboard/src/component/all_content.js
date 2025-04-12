@@ -10,9 +10,6 @@ function All_content({ card_data }) {
 
   return (
     <div>
-      <div className="wel">
-        <h1>Welcome to the website</h1>
-      </div>
       <div className="menu_bar">
         <button id="room_btn" onClick={() => setRoom('All')}>All</button>
         <button id="room_btn" onClick={() => setRoom('Science')}>Science</button>
