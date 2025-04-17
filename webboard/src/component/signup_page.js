@@ -1,13 +1,13 @@
 import React from 'react';
 import '../style_component/signup_page.css';
 
-function Signup_page({ closePopup }) {
+function Signup_page({ closePopup, switchToLogin }) {
     return (
         <div className="main_signup">
             <div className="signup_container">
-                <button className="close_btn" onClick={closePopup}>
-                    &times;
-                </button>
+                <div className="close_btn">
+                    <span onClick={closePopup}>&times;</span>
+                </div>
                 <h2 className="signup_title">Sign Up</h2>
                 <form className="signup_form">
                     <div className="form_group">
@@ -51,8 +51,8 @@ function Signup_page({ closePopup }) {
                         />
                     </div>
                     <button type="submit" className="signup_btn">Sign Up</button>
-                    <p className="login_prompt">
-                        Already have an account? <a href="#">Login</a>
+                    <p className="havelogin">
+                        Already have an account? <span onClick={switchToLogin}>Login</span>
                     </p>
                 </form>
             </div>

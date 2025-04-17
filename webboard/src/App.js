@@ -52,16 +52,18 @@ function App() {
 
       <All_content card_data={cardData} />
 
-      {/* Login Popup */}
       {showLogin && (
         <div className="modal">
-          <Login_page closePopup={() => setShowLogin(false)} />
+          <Login_page 
+            closePopup={() => setShowLogin(false)} 
+            switchToSignup={() => {setShowLogin(false); setShowSignup(true)}} />
         </div>
       )}
-      {/* Signup Popup */}
       {showSignup && (
         <div className="modal">
-          <Signup_page closePopup={() => setShowSignup(false)} />
+          <Signup_page 
+            closePopup={() => setShowSignup(false)} 
+            switchToLogin={() => {setShowSignup(false); setShowLogin(true)}} />
         </div>
       )}
     </div>

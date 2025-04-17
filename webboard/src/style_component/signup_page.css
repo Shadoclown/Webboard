@@ -140,9 +140,12 @@
     border: none;
     font-size: 24px;
     width: 100%;
-    cursor: pointer;
     color: var(--text-color);
 }
+.close_btn span {
+    cursor: pointer;
+}
+
 
 /* Form */
 .signup_form {
@@ -193,17 +196,18 @@
     background-color: var(--accent-hover-color);
 }
 
-/* Login Prompt */
-.login_prompt {
+/* havelogin */
+.havelogin {
     font-size: 14px;
     margin-top: 10px;
 }
 
-.login_prompt a {
+.havelogin span {
     color: var(--accent-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
-.login_prompt a:hover {
+.havelogin span:hover {
     text-decoration: underline;
 }

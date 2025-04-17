@@ -35,13 +35,12 @@
 
 .close_btn {
     text-align: right;
-    padding: 0;
-    background-color: transparent;
-    border: none;
     font-size: 24px;
     width: 100%;
-    cursor: pointer;
     color: var(--text-color);
+}
+.close_btn span {
+    cursor: pointer;
 }
 
 /* Form */
@@ -93,17 +92,18 @@
     background-color: var(--accent-hover-color);
 }
 
-/* Signup Prompt */
-.signup {
+/* Needsignup */
+.needsignup {
     font-size: 14px;
     margin-top: 10px;
 }
 
-.signup a {
+.needsignup span {
     color: var(--accent-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
-.signup a:hover {
+.needsignup span:hover {
     text-decoration: underline;
 }
