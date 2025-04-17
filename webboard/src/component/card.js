@@ -9,8 +9,8 @@ function Card({ title, content, category, username }) {
                         <h2>Title: {title}</h2>
                         <p>1000 comments</p>
                     </div>
-                    <h4>Room: {category}</h4>
-                    <h4>Posted by: {username}</h4>
+                    <h4 className='category'>Category: {category}</h4>
+                    <h4 className='posted_user'>Posted by: {username}</h4>
                     <p>{content}</p>
                 </div>
                 <button className="view_more_btn">View More</button>

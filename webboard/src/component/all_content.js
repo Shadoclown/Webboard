@@ -6,7 +6,7 @@ function All_content({ card_data }) {
 
   const filterData = selectRoom === 'All' 
     ? card_data 
-    : card_data.filter(item => item.category === selectRoom); // Filter by category_name
+    : card_data.filter(item => item.category.category_name === selectRoom);
 
   return (
     <div>

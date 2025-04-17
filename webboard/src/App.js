@@ -49,7 +49,7 @@ function App() {
             onClick={() => setShowSignup(true)}>Sign up</button>
         </div>
       </nav>
-
+      <h3 className='choose'>Choose Your Favorite Category</h3>
       <All_content card_data={cardData} />
 
       {showLogin && (
