@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({ title, content, room }) {
+function Card({ title, content, category, username }) {
     return (
         <div className="card_1" id="card">
             <div className="content">
@@ -9,7 +9,8 @@ function Card({ title, content, room }) {
                         <h2>Title: {title}</h2>
                         <p>1000 comments</p>
                     </div>
-                    <h4>Room: {room}</h4>
+                    <h4>Room: {category}</h4>
+                    <h4>Posted by: {username}</h4>
                     <p>{content}</p>
                 </div>
                 <button className="view_more_btn">View More</button>

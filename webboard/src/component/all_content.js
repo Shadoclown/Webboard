@@ -6,21 +6,27 @@ function All_content({ card_data }) {
 
   const filterData = selectRoom === 'All' 
     ? card_data 
-    : card_data.filter(item => item.room === selectRoom);
+    : card_data.filter(item => item.category === selectRoom); // Filter by category_name
 
   return (
     <div>
       <div className="menu_bar">
         <button id="room_btn" onClick={() => setRoom('All')}>All</button>
         <button id="room_btn" onClick={() => setRoom('Science')}>Science</button>
+        <button id="room_btn" onClick={() => setRoom('Engineer')}>Engineer</button>
+        <button id="room_btn" onClick={() => setRoom('Social')}>Social</button>
         <button id="room_btn" onClick={() => setRoom('Technology')}>Technology</button>
-        <button id="room_btn" onClick={() => setRoom('Math')}>Math</button>
-        <button id="room_btn" onClick={() => setRoom('Engineering')}>Engineering</button>
       </div>
 
       <div className="main_content">
         {filterData.map((data, index) => (
-          <Card key={index} title={data.title} room={data.room} content={data.content} />
+          <Card
+            key={index}
+            title={data.title}
+            category={data.category.category_name}
+            content={data.content}
+            username={data.user.username}
+          />
         ))}
       </div>
     </div>
