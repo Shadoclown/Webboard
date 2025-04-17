@@ -1,0 +1,209 @@
+:root {
+    --primary-color: #f5f5f5;
+    --accent-color: #007bff;
+    --accent-hover-color: #0056b3;
+    --text-color: #333;
+    --border-radius: 8px;
+    --shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* main */
+.main_login {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+}
+
+.login_container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.close_btn {
+    text-align: right;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Form */
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form_group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+}
+
+.form_group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* Button Styles */
+.login_btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login_btn:hover {
+    background-color: var(--accent-hover-color);
+}
+
+/* Signup Prompt */
+.signup {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.signup a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Main Signup Container */
+.main_signup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+}
+
+.signup_container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.close_btn {
+    text-align: right;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Form */
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form_group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+}
+
+.form_group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* Button Styles */
+.signup_btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup_btn:hover {
+    background-color: var(--accent-hover-color);
+}
+
+/* Login Prompt */
+.login_prompt {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login_prompt a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.login_prompt a:hover {
+    text-decoration: underline;
+}
