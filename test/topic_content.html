@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webboard - Topic</title>
+    <link rel="stylesheet" href="topic_content.css">
+</head>
+<body>
+    <!-- Topic Section -->
+    <section class="topic_content_section">
+        <header class="topic_header">
+            <h1 class="topic_title">Topic Title</h1>
+        </header>
+        <article class="topic_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugit est necessitatibus consequuntur odio voluptates repellat alias hic eveniet ad doloremque numquam reprehenderit dicta sint, nihil quidem illo veritatis beatae!</p>
+        </article>
+        <div class="topic_actions">
+            <div class="like_dislike_container">
+                <form action="post" class="like_dislike_form">
+                    <label for="like_button">Like</label>
+                    <input type="radio" name="reaction" id="like_button">
+                    <label for="dislike_button">Dislike</label>
+                    <input type="radio" name="reaction" id="dislike_button">
+                </form>
+                <p class="like_count">Likes: <span id="topic_like_count">10</span></p>
+            </div>
+        </div>
+        <footer class="topic_footer">
+            <p>Posted by: <span class="user">User</span></p>
+            <p>Time: <span class="time">12:00 PM</span></p>
+        </footer>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments_section">
+        <header class="comments_header">
+            <h2>Comments</h2>
+        </header>
+        <!-- Comment 1 -->
+        <article class="comment">
+            <p class="comment_number">#1</p>
+            <p class="comment_text">This is the first comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="like_dislike_container">
+                <form action="post" class="like_dislike_form">
+                    <label for="like_button_1">Like</label>
+                    <input type="radio" name="reaction_1" id="like_button_1">
+                    <label for="dislike_button_1">Dislike</label>
+                    <input type="radio" name="reaction_1" id="dislike_button_1">
+                </form>
+                <p class="like_count">Likes: <span id="comment_1_like_count">5</span></p>
+            </div>
+            <footer class="comment_footer">
+                <p>Commented by: <span class="user">User1</span></p>
+                <p>Time: <span class="time">12:05 PM</span></p>
+            </footer>
+        </article>
+        <!-- Comment 2 -->
+        <article class="comment">
+            <p class="comment_number">#2</p>
+            <p class="comment_text">This is the second comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="like_dislike_container">
+                <form action="post" class="like_dislike_form">
+                    <label for="like_button_2">Like</label>
+                    <input type="radio" name="reaction_2" id="like_button_2">
+                    <label for="dislike_button_2">Dislike</label>
+                    <input type="radio" name="reaction_2" id="dislike_button_2">
+                </form>
+                <p class="like_count">Likes: <span id="comment_2_like_count">3</span></p>
+            </div>
+            <footer class="comment_footer">
+                <p>Commented by: <span class="user">User3</span></p>
+                <p>Time: <span class="time">12:15 PM</span></p>
+            </footer>
+        </article>
+
+        <!-- Comment Form -->
+        <form action="post" class="comment_form">
+            <textarea name="comment" id="comment" rows="4" placeholder="Write your comment here..." required></textarea>
+            <div class="form_actions">
+                <label for="upload_picture" class="upload_picture_label">Add Picture</label>
+                <input type="file" id="upload_picture" name="picture" accept="image/*" class="upload_picture_input">
+                <button type="submit" class="submit_comment">Post Comment</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
