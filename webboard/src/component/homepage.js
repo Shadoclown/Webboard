@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../style_component/homepage.css';
 import All_content from './all_content';
 import Login_page from './login_page';
 import Signup_page from './signup_page';

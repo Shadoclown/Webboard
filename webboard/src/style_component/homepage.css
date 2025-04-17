@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #f5f5f5;
+    --hover-color: #e3e3e3;
+    --button-color: #007bff;
+    --button-hover-color: #0056b3;
+    --shadow: #c7c7c7 0px 5px 10px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: var(--primary-color);
+  }
+  
+  /* navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: var(--shadow);
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 1000;
+    cursor: pointer;
+  }
+  
+  /* searchbar */
+  .search_bar {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .search_bar input {
+    background-color: rgb(216, 216, 216);
+    padding: 8px;
+    width: 30vw;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* welcome */
+  .wel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  /* button */
+  .button {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+  }
+  .button #btn {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .button .signup_btn {
+    background-color: var(--button-color);
+    color: white;
+  }
+  .button .signup_btn:hover {
+    background-color: var(--button-hover-color);
+  }
+  .button .login_btn {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+  }
+  .button .login_btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* menu_bar */
+  .menu_bar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-inline: 60px;
+    border-radius: 10px;
+  }
+  .menu_bar #room_btn {
+    width: calc(100% / 6);
+    border: none;
+    padding: 12px 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+  }
+  .menu_bar #room_btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .choose {
+    text-align: center;
+    margin: 20px 0 10px;
+  }
+  
+  /* card */
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+    border-radius: 10px;
+    gap: 20px
+  }
+  .main_content #card{
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    min-height: 25vh;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+  }
+  .main_content #card:hover {
+    background-color: var(--hover-color);
+  }
+  .main_content #card .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 5px 15px;
+    gap: clamp(1vh, 4vh, 10vh);
+  }
+  .content .title_p {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .content .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content h1 {
+    font-size: 20px;
+    font-weight: 1000;
+  }
+  .content .room{
+    font-size: 20px;
+  }
+  
+  .content .posted_user {
+    font-size: 15px;
+    color: #3b3b3b;
+  }
+  .content p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    line-height: 20px;
+    max-height: 40px;
+    line-clamp: 2;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .view_more_btn {
+    background-color: var(--button-color);
+    color: #F8E7F6;
+    font-weight: bold;
+    min-width: 5vw;
+    width: 10vw;
+    max-width: 30vw;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .view_more_btn:hover {
+    background-color: var(--button-hover-color);
+    align-items: center;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+  }
