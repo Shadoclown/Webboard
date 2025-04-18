@@ -7,14 +7,17 @@ function Card({ title, content, category, username }) {
                 <div className="title_p">
                     <div className="title">
                         <h2>Title: {title}</h2>
-                        <p>1000 comments</p>
-                    </div>
-                    <h4 className='category'>Category: {category}</h4>
-                    <h4 className='posted_user'>Posted by: {username}</h4>
+                        <h4 className='category'>Category: {category}</h4>
                     <p>{content}</p>
+                    </div>
                 </div>
-                <button className="view_more_btn">View More</button>
             </div>
+            <footer className="card_footer">
+                <div className='card_footer_content'>
+                    <span className='posted_user'>Posted by: {username}</span>
+                    <span>1000 comments</span>
+                </div>
+            </footer>
         </div>
     );
 }
